@@ -7,7 +7,7 @@ Grading will *not* just be on the "code" code. The table of actions is part of t
 
 Many of you are taking this course as an intro to symbolic AI. This is a very typical sort of symbolic AI task. I've met many AI programmers who have never really learned to make what they contemptuously call "content", much as many software engineers don't know (much) CSS and act like that's OK. Writing good content is a hard skill you really only learn through experience. So as long as we're here, let's learn all the skills, even ones further outside our comfort zone. The "content" is important.
 
-We will use a method, "TALE-SPIN", due to James Meehan[1], that depends on a planner. So in week one we will build a planner. In week two we'll use the planner to build a story generator. In week 3 we'll make the story generator be customizable and give it a web interface.
+We will use a method, "TALE-SPIN", due to James Meehan[1], that depends on a *planner*. So in *week one* we will build a planner. In *week two* we'll use the planner to build a story generator. In *week three* we'll make the story generator be customizable and give it a web interface.
 
 ## Story Generator
 Let's turn your planner into a story generator. We'll use the TALESPIN method.
@@ -26,7 +26,7 @@ Now, if a hurricane prevents the plane from flying back, we have the start of a 
 
 Talespin incorporates a simulator that can 'execute' plans.
 
-For some actions, we code up "events" that might happen instead of the normal outcome. The simulator occasionally choose one of these events instead of the normal outcome.
+For some actions, we code up "*events*" that might happen instead of the normal outcome. The simulator occasionally choose one of these events instead of the normal outcome.
 
 You'll need to tie the event to an action (good reason to give actions atom names), and give it a probability, and a different Add and Remove, and a different description.
 
@@ -36,10 +36,11 @@ We assign a probability that this event will happen whenever we apply this actio
 
 If the event occurs, we now are NOT in the state we expected to be. Sally is in romantic_city instead of home.
 
-But Sally still wants to go home (goal is unchanged), so we discard our plan and replan - using the current conditions as our new initial conditions.
+But Sally still wants to go home (goal is unchanged), so we *discard our plan* and *replan* - using the current conditions as our new initial conditions.
+
 And we run the simulator on this new plan, continuing our story until we reach our goal.
 
-Perhaps Sally, rather than immediately getting out of romantic_city, encounters romantic_stranger as a result of another event. She might, in a moment of romantic comedy madness, change her goal from get_home to marry_romantic_stranger.
+Perhaps Sally, rather than immediately getting out of romantic_city, encounters romantic_stranger as a result of another event. She might, in a moment of romantic comedy madness, change her *goal* from get_home to marry_romantic_stranger.
 
 If you've taken my advice about representing goals, you don't need additional engine code to handle this.  Just remove the original goal if appropriate, and add new goal as conditions.
 
