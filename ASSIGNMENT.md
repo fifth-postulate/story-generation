@@ -15,10 +15,11 @@ Let's turn your planner into a story generator. We'll use the TALESPIN method.
 Basic plot writing books say "give your character a goal, and then put difficulties in their way and show them overcoming them".
 
 That's actually a decent algorithm for making a story.
-Make a plan
-Execute the plan. At each step have a random chance something will go wrong
-After the thing goes wrong, make a new plan
-go to step 2
+
+1. Make a plan
+2. Execute the plan. At each step have a random chance something will go wrong
+3. After the thing goes wrong, make a new plan
+4. go to step 2
 
 We can get a very boring story simply by running the planner - Sally goes on vacation and comes back.
 
