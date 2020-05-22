@@ -1,6 +1,8 @@
 # Story Generation
 Class project for the advanced Prolog course.
 
+The assignment is described in [`ASSIGNMENT.md`][assignment].
+
 ## GURPS
 [GURPS][gurps] stands for
 
@@ -12,4 +14,5 @@ A lot of us have kids of their own, and we are starting to introduce them to GUR
 
 I will therefore choose to generate GURPS adventures.
 
+[assignment]: https://github.com/fifth-postulate/story-generation/blob/master/ASSIGNMENT.md
 [gurps]: http://www.sjgames.com/gurps/ 
