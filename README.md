@@ -17,6 +17,13 @@ I will therefore choose to generate GURPS adventures.
 ## TALE SPIN
 [TALE SPIN][talespin] is a algorithm to generate stories.
 
+## Developement
+To start the server run the following command
+
+```sh
+swipl -g  go server.pl
+```
+
 [assignment]: https://github.com/fifth-postulate/story-generation/blob/master/ASSIGNMENT.md
 [gurps]: http://www.sjgames.com/gurps/ 
 [talespin]: https://github.com/fifth-postulate/story-generation/wiki/References
