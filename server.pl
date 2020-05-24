@@ -16,4 +16,6 @@ server(Port) :-
     http_server(http_dispatch, [port(Port)]).
 
 :- http_handler('/', http_reply_file('web/index.html', []), []).
- 
+:- http_handler('/static/js/', http_reply_from_files('web/js/', []), [prefix]).
+:- http_handler('/static/css/', http_reply_from_files('web/css/', []), [prefix]).
+:- http_handler('/static/image/', http_reply_from_files('web/image/', []), [prefix]).

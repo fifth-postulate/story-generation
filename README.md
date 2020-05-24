@@ -21,7 +21,7 @@ I will therefore choose to generate GURPS adventures.
 To start the server run the following command
 
 ```sh
-swipl -g  go server.pl
+swipl -g go server.pl
 ```
 
 [assignment]: https://github.com/fifth-postulate/story-generation/blob/master/ASSIGNMENT.md
